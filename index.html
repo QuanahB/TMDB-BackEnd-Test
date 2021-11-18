@@ -42,10 +42,10 @@
                 return result.json();
             })
             .then((data)=>{
-                //baseImageURL = data.images.secure_base_url;
-                //configData = data.images;
-                //console.log('config:', data);
-                //console.log('config fetched');
+                baseImageURL = data.images.secure_base_url;
+                configData = data.images;
+                console.log('config:', data);
+                console.log('config fetched');
                 runSearch('christmas')
             })
             .catch(function(err){
